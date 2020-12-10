@@ -68,6 +68,4 @@ public class ProductFacade {
         final var products = this.productService.findAll(page);
         return products.map(product -> this.conversionService.convert(product, SimplifiedProduct.class));
     }
-
-
 }
